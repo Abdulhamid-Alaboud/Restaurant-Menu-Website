@@ -1,4 +1,4 @@
-#  Traditional Restaurant Management System
+#  Restaurant-Menu-Website
 
 **Abdulhamid Alaboud · Ahmed Alaglan**  
 Department of Computer Science  
