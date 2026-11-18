@@ -1,0 +1,500 @@
+* {  
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* ---- SECTION: Index ---- */
+/* Set global styles for the entire page, including font, background, and alignment */
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f8f1e1; 
+    text-align: center; 
+    direction: rtl; 
+}
+
+/* Style for the header section at the top of the page */
+header { 
+    background-color: #7d2020; 
+    color: #fff; 
+    padding: 15px 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+/* Main title styling */
+h1 { 
+    font-size: 2em; 
+    margin: auto; 
+}
+
+/* Logo for the landing page */
+.landing-logo { 
+    width: 200px; 
+}
+
+/* Centered container for landing page content */
+.landing-container { 
+    text-align: center; 
+    max-width: 450px; 
+    padding: 25px; 
+    background-color: #fff; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -225px; 
+    margin-left: -225px; 
+    transition: transform 0.3s ease-in-out; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Hover effect for the landing container */
+.landing-container:hover { 
+    transform: scale(1.05); 
+}
+
+/* Styling for the main title of the landing page */
+.landing-title { 
+    font-size: 2.2em; 
+    color: #a52a2a; 
+    margin-bottom: 15px; 
+}
+
+/* Button style for entering the menu */
+.enter-button { 
+    padding: 15px 30px; 
+    font-size: 1.1em; 
+    background-color: #7d2020; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+    margin-bottom: 20px;
+}
+
+/* Style for the description text in the landing page */
+.description { 
+    font-size: 1.1em; 
+    color: #555; 
+    margin-bottom: 25px; 
+}
+
+/* ---- SECTION: Menu ---- */
+/* Logo style for the menu navigation */
+.menu-logo { 
+    width: 70px; 
+}
+
+/* Navigation bar styling for the menu */
+.menu-navigation { 
+    background-color: #33333300; 
+    padding: 10px 0; 
+}
+
+/* Menu navigation links styling */
+.menu-navigation a { 
+    color: #fff; 
+    padding: 10px 20px; 
+    background-color: #7d2020; 
+    border-radius: 5px; 
+    margin: 0 10px; 
+    display: inline-block; 
+    transition: background-color 0.3s; 
+    text-decoration: none; 
+}
+
+/* Hover effect for navigation links */
+.menu-navigation a:hover { 
+    background-color: #b03a3a; 
+}
+
+/* Main container for menu items */
+.menu-section { 
+    padding: 20px; 
+    background-color: #fff; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Layout for menu categories (e.g., drinks, desserts) */
+.menu-category { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+/* Individual menu item card */
+.menu-item { 
+    background: #f7f2e9; 
+    margin: 10px; 
+    padding: 15px; 
+    border: 1px solid #d1a38b; 
+    width: 250px; 
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+/* Hover effect for menu item cards */
+.menu-item:hover { 
+    transform: scale(1.05); 
+}
+
+/* Styling for menu item images */
+.menu-item img { 
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+/* Button style for adding items to the cart */
+button { 
+    background-color: #7d2020; 
+    color: #fff; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer; 
+    width: 100%; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+/* Hover effect for buttons */
+button:hover { 
+    background-color: #b03a3a; 
+}
+
+/* ---- SECTION: Cart ---- */
+/* Icon for the shopping cart, fixed at the top-left corner */
+.cart-icon { 
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    font-size: 1.5em; 
+    background-color: #7d2020; 
+    color: #fff; 
+    padding: 10px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+/* Cart section container for items */
+.cart-section { 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+/* List of cart items */
+#cart-items { 
+    list-style-type: none; 
+    padding: 0; 
+}
+
+/* Individual cart item styling */
+#cart-items li { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 8px 12px; 
+    margin-bottom: 10px; 
+    background-color: #f1f1f1; 
+    border-radius: 8px; 
+}
+
+/* Total price section styling */
+#total-price { 
+    font-size: 18px; 
+    color: #555; 
+    font-weight: bold; 
+    margin-top: 15px; 
+}
+
+/* Buttons within the cart page */
+.cart-buttons { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+/* Back to home button styling */
+.back-to-home-btn-container { 
+    display: flex; 
+    justify-content: flex-end; 
+    margin-top: 20px; 
+}
+
+/* ---- SECTION: CaloriesCalculator ---- */
+.menu-item,
+#calorie-calculator .menu-item,
+.calories-item {
+    background-color: #f7f2e9;
+    padding: 20px;
+    border: 1px solid #d1a38b;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 22%; 
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+.menu-item img,
+#calorie-calculator .menu-item img,
+.calories-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.calories-items {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px 0;
+    justify-content: center; 
+}
+
+.calories-item {
+    background-color: #f7f2e9;
+    padding: 15px;
+    border: 1px solid #d1a38b;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.calories-item:hover {
+    transform: scale(1.05);
+}
+
+.calories-item h3 {
+    font-size: 1.4em;
+    color: #7d2020;
+    margin-bottom: 10px;
+}
+
+.calories-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+/* Heading styles for the calculator */
+.calories-calculator h2 {
+    font-size: 1.8em;
+    color: #7d2020;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.calories-calculator .input-field {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Calculate button styling */
+.calories-calculator .calculate-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #7d2020;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.calories-calculator .calculate-btn:hover {
+    background-color: #b03a3a;
+}
+
+
+/* ---- SECTION: OrderConfirmation ---- */
+/* Order confirmation section styling */
+.order-confirmation {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjusting margins for order confirmation details */
+.info-section {
+    margin-bottom: 10px;
+}
+
+.info-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.info-section input[type="text"], .info-section input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+/* Table styling for order details */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+table th {
+    background-color: #7d2020;
+    color: #fff;
+}
+
+table td {
+    background-color: #fff;
+}
+
+/* Button styling for confirmation and back to cart */
+.confirm-btn, .back-to-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px; 
+    font-size: 16px;
+    color: white;
+    background-color: #7d2020;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.confirm-btn:hover, .back-to-cart-btn:hover {
+    background-color: #5b1616;
+}
+
+/* Logo sizing */
+.logo { 
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+/* Order confirmation heading styles */
+.order-confirmation h1, .order-confirmation h2 {
+    color: #7d2020;
+    margin-bottom: 10px;
+}
+
+.order-confirmation .customer-info p, 
+.order-confirmation .total p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Button margin adjustment */
+.order-confirmation .confirm-btn, 
+.order-confirmation .back-to-cart-btn {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Hiding buttons during print */
+@media print {
+    .confirm-btn, .back-to-cart-btn {
+        display: none;
+        
+    }
+}
+
+
+/* Footer styling */
+footer { 
+    background-color: #7d2020; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px 20px; 
+}
+
+/* Generic button style used across the site */
+.btn { 
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 15px 30px; 
+    font-size: 1.1em; 
+    background-color: #7d2020; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+/* Hover effect for generic buttons */
+.btn:hover { 
+    background-color: #660000; 
+    transform: scale(1.05); 
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) { 
+    .landing-container { 
+        margin-top: -200px; 
+        margin-left: -175px; 
+        max-width: 90%; 
+        padding: 15px; 
+    }
+}

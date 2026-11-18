@@ -6,8 +6,8 @@ Jazan University, Saudi Arabia
 
 ---
 
-##  Overview  
-This project is a comprehensive, full-stack web application for a traditional restaurant, developed as part of the WEB PROGRAMMING curriculum. The system integrates a dynamic menu, interactive shopping cart, calorie calculator, and secure checkout process to provide a seamless digital dining experience. Built with PHP, MySQL, and modern front-end technologies, it demonstrates practical implementation of database-driven web applications.
+## Overview
+A full-stack web application for a traditional restaurant featuring a dynamic menu, interactive shopping cart, calorie calculator, and checkout workflow. Built with PHP, MySQL, and modern front-end technologies using PDO prepared statements.
 
 ---
 
@@ -144,7 +144,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📬 Contact  
-For technical questions, collaboration opportunities, or feedback:  
-- **Repository Issues**: [GitHub Issues Page](https://github.com/Abdulhamid-Alaboud/Restaurant-Menu-Website/issues)  
-- **Academic Inquiries**: Department of Computer Science, Jazan University  
+## Contact
+For technical questions, collaboration opportunities, or feedback:
+- **Repository Issues:** [GitHub Issues](https://github.com/Abdulhamid-Alaboud/Restaurant-Menu-Website/issues)
