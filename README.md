@@ -11,6 +11,18 @@ A full-stack web application for a traditional restaurant featuring a dynamic me
 
 ---
 
+## Application Screenshots
+
+| Landing Page (`index.html`) | Dynamic Menu (`menu.php`) |
+| :---: | :---: |
+| ![Home Page](screenshots/01_home.png) | ![Menu Page](screenshots/02_menu.png) |
+
+| Shopping Cart (`cart.php`) | Calorie Calculator (`CaloriesCalculator.php`) |
+| :---: | :---: |
+| ![Shopping Cart](screenshots/03_cart.png) | ![Calorie Calculator](screenshots/04_calories_calculator.png) |
+
+---
+
 ##  Key Features  
 - **Dynamic Menu Display**: Categorized food items (Main Dishes, Desserts, Drinks) with images, descriptions, and prices fetched in real-time from MySQL database  
 - **Interactive Shopping Cart**: Session-based cart management with add/remove functionality and real-time price calculation  
