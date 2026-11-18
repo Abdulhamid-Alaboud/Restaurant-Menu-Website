@@ -64,47 +64,46 @@ restaurant-menu/
 
 ---
 
-##  Quick Setup & Installation  
+## Database Schema (ERD)
 
-1. **Prerequisites Installation**  
-   - Download and install [XAMPP](https://www.apachefriends.org/) (includes Apache & MySQL)
+```mermaid
+erDiagram
+    MENU_ITEMS {
+        INT id PK "AUTO_INCREMENT"
+        VARCHAR name "NOT NULL"
+        TEXT description
+        DECIMAL price "DECIMAL(10,2)"
+        VARCHAR image "Asset filename in images/"
+        ENUM category "main | dessert | drink"
+        INT calories "Nutritional kcal"
+    }
+```
 
-2. **Database Configuration**  
-   ```sql
-   -- Run in phpMyAdmin or MySQL client
-   CREATE DATABASE restaurant;
-   USE restaurant;
-   
-   -- Create menu_items table structure
-   CREATE TABLE menu_items (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     name VARCHAR(255) NOT NULL,
-     description TEXT,
-     price DECIMAL(10,2) NOT NULL,
-     image VARCHAR(255),
-     category VARCHAR(50),
-     calories INT
-   );
-   
-   -- Insert sample data
-   INSERT INTO menu_items (name, description, price, category, calories) 
-   VALUES ('Traditional Dish', 'Authentic recipe description', 35.00, 'main', 300);
-   ```
+A ready-to-import SQL schema with all 15 traditional menu items mapped to `images/` is provided in [`schema.sql`](schema.sql).
 
-3. **Project Deployment**  
+---
+
+## Quick Setup & Installation
+
+1. **Prerequisites**
+   - Install [XAMPP](https://www.apachefriends.org/) (Apache + MySQL + PHP 7.4+).
+
+2. **Import Database (`schema.sql`)**
    ```bash
-   # Clone or download the repository
-   git clone https://github.com/Abdulhamid-Alaboud/Restaurant-Menu-Website.git
-   
-   # Move to XAMPP htdocs directory
-   cp -r Restaurant-Menu-Website C:\xampp\htdocs\restaurant-menu
-   
-   # Update database credentials in db.php if needed
+   mysql -u root < schema.sql
    ```
+   *(Or import [`schema.sql`](schema.sql) directly in phpMyAdmin.)*
 
-4. **Launch Application**  
-   - Start Apache & MySQL from XAMPP Control Panel  
-   - Navigate to: `http://localhost/restaurant-menu/`
+3. **Deploy Locally**
+   ```bash
+   git clone https://github.com/Abdulhamid-Alaboud/Restaurant-Menu-Website.git
+   cp -r Restaurant-Menu-Website C:\xampp\htdocs\restaurant-menu
+   ```
+   Update credentials in `db.php` if your MySQL instance uses a non-empty root password.
+
+4. **Launch Application**
+   - Start **Apache** and **MySQL** in XAMPP Control Panel.
+   - Open `http://localhost/restaurant-menu/`.
 
 ---
 
